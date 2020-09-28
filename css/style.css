@@ -45,11 +45,71 @@ ul:last-child{
   display: flex;
   justify-content: space-between;
 }
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
 
+}
 nav ul{
   height: 48px;
   align-items: center;
 }
 nav ul li{
   padding-right: 16px;
+}
+a{
+  text-decoration: none;
+}
+footer ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+footer>ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+footer > ul>li{
+  flex-basis: 100%;
+}
+footer> ul>li:first-child{
+  flex-basis: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer >ul>li:first-child ul{
+  flex-basis: 33.3%;
+}
+footer >ul>li:nth-child(2){
+  flex-basis: 30%;
+}
+footer>ul>li>ul>li:first-child{
+  font-weight: bold;
+}
+/* footer>ul>li>ul>li:first-child>a{
+  cursor: pointer;
+}
+
+footer>ul>li>ul>li:first-child a:hover{
+  cursor: pointer;
+} */
+
+footer>ul>li:nth-child(2) ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer>ul>li:last-child ul{
+  display: flex;
+  font-weight: normal;
+  font-size: 10px;
+}
+
+footer>ul>li:last-child> ul> li::after{
+  content: '|';
+  padding: 0 5px;
+}
+footer>ul>li:last-child>ul> li:last-child::after{
+  content: '';
 }
