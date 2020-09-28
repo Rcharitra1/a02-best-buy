@@ -106,7 +106,7 @@ footer>ul>li:last-child ul{
   font-size: 10px;
 }
 
-footer>ul>li:last-child> ul> li::after{
+footer>ul>li:last-child>ul li:after{
   content: '|';
   padding: 0 5px;
 }
