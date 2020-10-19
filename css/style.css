@@ -51,11 +51,65 @@ ul:last-child{
 
 }
 nav ul{
-  height: 48px;
   align-items: center;
 }
 nav ul li{
   padding-right: 16px;
+}
+
+nav > ul > li{
+  position: relative;
+}
+
+nav > ul > li > ul{
+  display: none;
+}
+nav > ul > li:hover > ul {
+  display: block;
+  background-color: lightblue;
+  color:white;
+  position: absolute;
+  top:100%;
+  padding: 2%;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+nav > ul > li > ul > li > ul{
+  display: none;
+}
+
+nav > ul > li > ul > li:hover > ul{
+  display: block;
+  left:100%;
+  position: absolute;
+  background-color: grey;
+  top:0;
+}
+
+nav > ul > li > ul > li:hover{
+  display:block;
+}
+
+nav > ul > li > ul >li > ul >li:first-of-type{
+  font-weight: bold;
+}
+
+nav > ul > li > ul > li:hover{
+  background-color: blue;
+}
+
+nav > ul > li > ul > li:hover > ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding:2%;
+  width: 400px;
+}
+
+nav > ul > li > ul >li:hover > ul > li{
+  flex-basis: calc((100% - 4%) / 4);
+  text-align: left;
 }
 a{
   text-decoration: none;
