@@ -57,7 +57,7 @@ nav ul li{
   padding-right: 16px;
 }
 
-nav > ul > li{
+nav{
   position: relative;
 }
 
@@ -66,13 +66,13 @@ nav > ul > li > ul{
 }
 nav > ul > li:hover > ul {
   display: block;
-  background-color: lightblue;
-  color:white;
+  background-color: #f3f6f9;
+  color:black;
   position: absolute;
-  top:100%;
-  padding: 2%;
   margin: 0 auto;
   white-space: nowrap;
+  left: 0;
+
 }
 
 nav > ul > li > ul > li > ul{
@@ -83,10 +83,20 @@ nav > ul > li > ul > li:hover > ul{
   display: block;
   left:100%;
   position: absolute;
-  background-color: grey;
+  background-color: #f3f6f9;
   top:0;
+  color:black;
+}
+nav > ul > li > ul > li{
+  margin:1rem 0.5rem;
+
 }
 
+nav > ul > li > ul > li::after{
+  content: ">";
+  align-content: right;
+
+}
 nav > ul > li > ul > li:hover{
   display:block;
 }
@@ -97,19 +107,35 @@ nav > ul > li > ul >li > ul >li:first-of-type{
 
 nav > ul > li > ul > li:hover{
   background-color: blue;
+  color:white;
 }
 
 nav > ul > li > ul > li:hover > ul{
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  padding:2%;
-  width: 400px;
+  width: 600px;
+  background: white;
+  color:black;
 }
 
-nav > ul > li > ul >li:hover > ul > li{
-  flex-basis: calc((100% - 4%) / 4);
-  text-align: left;
+nav > ul > li >ul >li > ul > li{
+  color:black;
+}
+
+nav > ul > li > ul >li > ul > li{
+  flex-basis: 30%;
+  color:black;
+}
+nav > ul > li > ul >li > ul > li:first-of-type{
+  flex-basis: 100%;
+  margin:1rem 0.5rem;
+}
+nav > ul > li > ul >li > ul > li > a{
+  color: black;
+  padding-left: 0.5rem;
+}
+nav > ul > li > ul >li > ul > li:hover a{
+  color:blue;
 }
 a{
   text-decoration: none;
