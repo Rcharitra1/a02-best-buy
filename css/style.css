@@ -45,11 +45,16 @@ ul:last-child{
   display: flex;
   justify-content: space-between;
 }
-.container{
-  max-width: 1280px;
-  margin: 0 auto;
+header > div:first-of-type> ul > li > img{
+  height: 30px;
+}
+
+header > div:first-of-type> ul > li > form > input{
+  padding:0.5rem;
+  margin-left: 0.5rem;
 
 }
+
 nav ul{
   align-items: center;
 }
@@ -196,4 +201,17 @@ footer > ul > li:last-child ul li:last-child:after{
 main section{
   display: flex;
   flex-wrap: wrap;
+}
+
+.container{
+  padding:0 1rem ;
+}
+
+@media (min-width:1280px) {
+  .container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+
+  }
 }
