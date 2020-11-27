@@ -15,11 +15,17 @@ header > ul{
   align-items: center;
 }
 
+.container > ul:first-child > li:last-child{
+  flex-basis: 75%;
+}
 header ul{
   list-style: none;
   padding-left: 0;
   margin: 0;
   display: flex;
+}
+.container > ul:first-child{
+  flex-basis: 60%;
 }
 header >ul li{
   padding-left: 16px;
@@ -51,14 +57,15 @@ header > div:first-of-type> ul > li > img{
 
 header > div:first-of-type> ul > li > form > input{
   padding:0.5rem;
+  background-image: url('../img/magnifying-glass.svg');
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: right 5px center;
   margin-left: 0.5rem;
   border: none;
   border-radius: 2px;
   outline: none;
-  width: 100%;
-  min-width: 200px;
-  max-width: 400px;
-  flex-grow: 1;
+  width: 100%
 
 }
 
