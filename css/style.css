@@ -113,7 +113,6 @@ nav > ul > li > ul > li{
 
 nav > ul > li > ul > li::after{
   content: ">";
-  align-content: right;
 
 }
 nav > ul > li > ul > li:hover{
